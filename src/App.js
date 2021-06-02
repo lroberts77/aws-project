@@ -15,7 +15,6 @@ function App() {
   );
 }
 
-
 export default withAuthenticator(App);
 
 
