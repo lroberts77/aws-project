@@ -7,6 +7,8 @@ import './App.css';
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
 
+const initialState = { name: '', description: '' }
+
 const App = () => {
   return (
     <div className="App">
