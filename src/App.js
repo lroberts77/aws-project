@@ -12,6 +12,7 @@ const initialState = { name: '', description: '' }
 const App = () => {
 
   const [formState, setFormState] = useState(initialState)
+  const [todos, setTodos] = useState([])
 
   return (
     <div className="App">
