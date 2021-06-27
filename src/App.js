@@ -14,6 +14,10 @@ const App = () => {
   const [formState, setFormState] = useState(initialState)
   const [todos, setTodos] = useState([])
 
+  useEffect(() => {
+    fetchTodos()
+  }, [])
+
   return (
     <div className="App">
     </div>
