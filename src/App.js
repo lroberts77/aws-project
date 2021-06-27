@@ -10,6 +10,9 @@ Amplify.configure(awsExports);
 const initialState = { name: '', description: '' }
 
 const App = () => {
+
+  const [formState, setFormState] = useState(initialState)
+
   return (
     <div className="App">
     </div>
