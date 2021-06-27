@@ -4,6 +4,9 @@ import { createTodo } from './graphql/mutations'
 import { listTodos } from './graphql/queries'
 import './App.css';
 
+import awsExports from "./aws-exports";
+Amplify.configure(awsExports);
+
 const App = () => {
   return (
     <div className="App">
