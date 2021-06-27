@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import Amplify, { API, graphqlOperation } from 'aws-amplify'
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
     </div>
