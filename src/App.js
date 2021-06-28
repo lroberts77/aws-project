@@ -17,6 +17,10 @@ const App = () => {
   useEffect(() => {
     fetchTodos()
   }, [])
+  
+  function setInput(key, value) {
+    setFormState({ ...formState, [key]: value})
+  }
 
   return (
     <div className="App">
