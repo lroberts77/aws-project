@@ -6,3 +6,9 @@
 </div>
 
 ### Technologies: React, AWS, Amplify, graphql, Node.js, JavaScript, HTML, CSS
+
+## Index
+* [Project Direction](#Project)
+* [Installation](#Install)
+* [Usage](#Usage)
+* [Improvemets](#Improvements)
