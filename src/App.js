@@ -22,6 +22,15 @@ const App = () => {
     setFormState({ ...formState, [key]: value})
   }
 
+  const fetchTodos = async () => {
+    try {
+      const todoData = await API.graphql(graphqlOperation(listTodos))
+      const todos = todoData.data.listTodos.items
+      setTodos(todos)
+    } catch (err) {console.log('error fetching todos')}
+  }
+
+
   return (
     <div className="App">
     </div>
