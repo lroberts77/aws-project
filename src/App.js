@@ -47,7 +47,7 @@ const App = () => {
   return (
     <div className="app-container">
       <h2>AWS TODOS</h2>
-      <input
+      <input className="input"
         onChange={event => setInput('name', event.target.value)}
         value={formState.name}
         placeholder='name'

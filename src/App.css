@@ -6,3 +6,11 @@ flex-direction: column;
 justify-content: center;
 padding: 20px;
 }
+
+.input {
+  border: none;
+  background-color: #ddd;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 18px;
+}
