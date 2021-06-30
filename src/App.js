@@ -27,12 +27,31 @@ const App = () => {
       const todoData = await API.graphql(graphqlOperation(listTodos))
       const todos = todoData.data.listTodos.items
       setTodos(todos)
-    } catch (err) {console.log('error fetching todos')}
+    } catch (err) {
+      console.log('error fetching todos')
+    }
   }
 
+  const addTodo = async () => {
+    try {
+      if (!formState.name || !formState.description) return
+      const todo = { ...formState }
+      setTodos([...todos, todo])
+      setFormState(initialState)
+      await API.graphql(graphqlOperation(createTodo, {input: todo}))
+    } catch (err) {
+      console.log('error creating todo:', err);
+    }
+  }
 
   return (
-    <div className="App">
+    <div className="app-container">
+      <h2>AWS TODOS</h2>
+      <input
+        onChange={event => setInput('name', event.target.value)}
+        value={formState.name}
+        placeholder='name'
+        />
     </div>
   );
 }
