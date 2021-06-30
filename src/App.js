@@ -61,6 +61,14 @@ const App = () => {
         onClick={addTodo}>
           Create todo
       </button>
+      {
+        todos.map((todo, index) => (
+          <div className="todo" key={todo.id ? todo.id : index}>
+            <p className="todo-Name">{todo.name}</p>
+            <p className="todo-description">{todo.description}</p>
+          </div>
+        ))
+      }
     </div>
   );
 }
