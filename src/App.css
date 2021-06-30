@@ -15,4 +15,10 @@ padding: 20px;
   font-size: 18px;
 }
 
-
+.add-btn {
+  background-color: black;
+  color: white;
+  outline: none;
+  font-size: 18px;
+  padding: 12px 0px;
+}
