@@ -64,7 +64,7 @@ const App = () => {
       {
         todos.map((todo, index) => (
           <div className="todo" key={todo.id ? todo.id : index}>
-            <p className="todo-Name">{todo.name}</p>
+            <p className="todo-name">{todo.name}</p>
             <p className="todo-description">{todo.description}</p>
           </div>
         ))
