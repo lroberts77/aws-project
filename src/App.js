@@ -51,7 +51,12 @@ const App = () => {
         onChange={event => setInput('name', event.target.value)}
         value={formState.name}
         placeholder='name'
-        />
+      />
+      <input className="input"
+        onChange={event => setInput('description', event.target.value)}
+        value={formState.description}
+        placeholder='description'
+      />
     </div>
   );
 }
