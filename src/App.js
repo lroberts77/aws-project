@@ -57,6 +57,10 @@ const App = () => {
         value={formState.description}
         placeholder='description'
       />
+      <button className="add-btn"
+        onClick={addTodo}>
+          Create todo
+      </button>
     </div>
   );
 }
